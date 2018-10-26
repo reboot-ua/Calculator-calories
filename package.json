@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack/webpack.dev.js --open HOST=0.0.0.0",
+    "start": "webpack-dev-server --config ./webpack/webpack.dev.js",
     "test": "jest",
     "lint": "eslint ./src",
     "lint:watch": "esw --watch",
@@ -35,8 +35,11 @@
     "style-loader": "^0.23.1",
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0",
-    "webpack": "^4.22.0",
+    "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
   }
 }
