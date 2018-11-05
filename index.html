@@ -6,10 +6,35 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Calculator</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"></head>
-<header class="app-heder">Calculator calories
-</header>
 <body>
-About
+<div>
+  <button id="toggle">Male</button>
+</div>
+<div id="content">
+  <form id="manBMR">
+    Man
+    <p>
+      <label for="manWeight">Weight (kg)</label>
+      <input id="manWeight" name="manWeight" type="number" placeholder="ex: 78"/>
+    </p>
+    <p>
+      <label for="manHeight">Height (cm)</label>
+      <input id="manHeight" name="manHeight" type="number" placeholder="ex: 182"/>
+    </p>
+    <p>
+      <label for="manAge">Ages (years)</label>
+      <input id="manAge" name="manAge" type="number" placeholder="ex: 23" />
+    </p>
+    <p>
+      <input type="submit" value="Calculate BMR" />
+      or
+      <input type="reset" value="Reset" />
+    </p>
+    <p>
+      <label for="result">Result</label>
+      <input id="result" name="result"/>
+    </p>
+  </form>
+</div>
 </body>
 </html>
