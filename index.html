@@ -9,9 +9,10 @@
 <body>
 <div>
   <button id="toggle">Male</button>
+  <button>Famale</button>
 </div>
-<div id="content">
-  <form id="manBMR">
+<div id="content" class='hide'>
+  <form id="manBMR" action="">
     Man
     <p>
       <label for="manWeight">Weight (kg)</label>
@@ -34,6 +35,36 @@
       <label for="result">Result</label>
       <input id="result" name="result"/>
     </p>
+  </form>
+</div>
+
+
+<div>
+  <form id="womanBMR" action="">
+    <fieldset>
+      <legend>Woman</legend>
+      <p>
+        <label for="womanWeight">Weight (kg)</label>
+        <input id="womanWeight" name="womanWeight" type="number" placeholder="ex: 68"/>
+      </p>
+      <p>
+        <label for="womanHeight">Height (cm)</label>
+        <input id="womanHeight" name="womanHeight" type="number" placeholder="ex: 172"/>
+      </p>
+      <p>
+        <label for="womanAge">Ages (years)</label>
+        <input id="womanAge" name="womanAge" type="number" placeholder="ex: 23"/>
+      </p>
+      <p>
+        <input type="submit" value="Calculate BMR" />
+        or
+        <input type="reset" value="Reset" />
+      </p>
+      <p>
+        <label for="resultWoman">Result</label>
+        <input id="resultWoman" name="result"/>
+      </p>
+    </fieldset>
   </form>
 </div>
 </body>

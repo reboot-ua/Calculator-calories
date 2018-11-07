@@ -1,11 +1,13 @@
 const toggle  = document.getElementById('toggle');
 const content = document.getElementById('content');
 
+
 toggle.addEventListener('click', function () {
-  content.classList.toggle('show');
+  const le = content.dataset.toggled ^= 1;
+  content.style.display = le ? 'none' : 'block';
 });
 
-/* Calculate MAN BMR */
+/* Calculate MAN */
 (function () {
   function calculateManBMR (manWeight, manHeight, manAge) {
     manWeight = parseFloat(manWeight);
@@ -19,6 +21,26 @@ toggle.addEventListener('click', function () {
     manBMR.onsubmit = function () {
       this.result.value = calculateManBMR(this.manWeight.value, this.manHeight.value,
         this.manAge.value);
+      return false;
+    };
+  }
+}());
+
+
+/* Calculate Woman BMR */
+(function () {
+  function calculateWoman (womanWeight, womanHeight, womanAge) {
+    womanWeight = parseFloat(womanWeight);
+    womanHeight = parseFloat(womanHeight);
+    womanAge = parseFloat(womanAge);
+    return ((womanWeight * 10) + (womanHeight * 6.25) - (womanAge * 5) - 161);
+  }
+
+  const womanBMR = document.getElementById('womanBMR');
+  if (womanBMR) {
+    womanBMR.onsubmit = function () {
+      this.result.value = calculateWoman(this.womanWeight.value, this.womanHeight.value,
+        this.womanAge.value);
       return false;
     };
   }
