@@ -1,7 +1,6 @@
 # Code quality
 
 **CALCULATOR CALORIES**
-* [Jest](https://jestjs.io) - Zero configuration testing platform
-* [ESLint](https://eslint.org/) - The pluggable linting utility for JavaScript and JSX
-* [Stylelint](https://stylelint.io/) - The Modern linter that helps avoid errors and enforce conventions in styles.
-* [EditorConfig](https://editorconfig.org/) - EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
+Calorie Calculator is designed to determine how much caloric you need for normal functioning of the human body.
+This project was designed to allow a man or woman to determine how much they need calories in a certain age of their lives. 
+And could pick up the appropriate food products.
