@@ -6,10 +6,11 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="src/index.css">
 <body>
 <div>
   <button id="toggle">Male</button>
-  <button>Famale</button>
+  <button id="toggleW">Famale</button>
 </div>
 <div id="content" class='hide'>
   <form id="manBMR" action="">
@@ -22,6 +23,7 @@
       <label for="manHeight">Height (cm)</label>
       <input id="manHeight" name="manHeight" type="number" placeholder="ex: 182"/>
     </p>
+
     <p>
       <label for="manAge">Ages (years)</label>
       <input id="manAge" name="manAge" type="number" placeholder="ex: 23" />
@@ -39,7 +41,7 @@
 </div>
 
 
-<div>
+<div  id="contentW" class='hide'>
   <form id="womanBMR" action="">
     <fieldset>
       <legend>Woman</legend>

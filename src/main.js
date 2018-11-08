@@ -1,10 +1,9 @@
+// hide man
 const toggle  = document.getElementById('toggle');
 const content = document.getElementById('content');
-
-
 toggle.addEventListener('click', function () {
   const le = content.dataset.toggled ^= 1;
-  content.style.display = le ? 'none' : 'block';
+  content.style.display = le ? 'block' : 'none';
 });
 
 /* Calculate MAN */
@@ -25,6 +24,14 @@ toggle.addEventListener('click', function () {
     };
   }
 }());
+
+// hide woman
+const toggleW  = document.getElementById('toggleW');
+const contentW = document.getElementById('contentW');
+toggleW.addEventListener('click', function () {
+  const le = contentW.dataset.toggled ^= 1;
+  contentW.style.display = le ? 'block' : 'none';
+});
 
 
 /* Calculate Woman BMR */
