@@ -10,4 +10,4 @@ And could pick up the appropriate food products.
 My teacher and mentor is **[Vladimir Shevchuk](https://github.com/dosandk)**
 
 
-It's my **[calculator](https://reboot-ua.github.io/CalculatorCalories/)**
+It's my **[calculator](https://reboot-ua.github.io/Calculator-calories/)**
